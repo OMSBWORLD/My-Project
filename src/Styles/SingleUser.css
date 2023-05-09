@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.view-grand{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100vh;
+    
+}
+.view-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21%;
+    min-height: 100vh;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 14px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 20px 0px 0px 20px;
+}
+.view-right{
+    width: 78%;
+    min-height: 100vh;
+    position: relative;
+}
+.view-top{
+    width: 100%;
+    min-height: 25vh;
+    background: linear-gradient(180deg, #20589A 0%, #BBD5E6 100%);
+    border-radius: 0px;
+    position: relative;
+    color: #1a1a1a;
+}
+.view-top h3{
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+}
+.view-buttom{
+    width: 100%;
+    min-height: 70vh;
+    background: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+.buttom-one{
+    width: 100%;
+    background: #1A7EBD;
+    border-radius: 8px 8px 0px 0px;
+    height: 50px;
+    display: flex;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+.buttom-two{
+    border-radius: 8px;
+    color: #1A7EBD;
+    display: flex;
+    line-height: 2;
+}
+.buttom-two-one{
+    color: #1a1a1a;
+}

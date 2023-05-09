@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.home-content{
+    width: 100%;
+    min-height: 70vh;
+    background: #FFFFFF;
+}
+
+table{
+    width: 100%;
+    min-height: 70vh;
+}
+.thead{
+  width: 100%;
+  background: #1A7EBD;
+  border-radius: 8px 8px 0px 0px;
+  height: 50px;
+  display: flex;
+  color: #FFFFFF;
+  
+}
+tbody{
+    border-radius: 8px;
+    color: #1A7EBD;
+}
+.row-head, .row-body{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+th{
+    width: 180px;
+    text-align: center;  
+}
+td{
+    width: 180px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.view{
+    color: green;
+    font-size: 20px;
+    cursor: pointer;
+}
+.edit{
+    color: yellow;
+    font-size: 20px;
+    cursor: pointer;
+}
+.delete{
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px){
+    .home-content{
+        width: 100%;
+        min-height: 70vh;
+        background: #FFFFFF;
+    }
+    
+    table{
+        width: 100%;
+        max-width: 480px;
+        min-height: 70vh;
+    }
+    .thead{
+      width: 100%;
+      max-width: 480px;
+      background: #1A7EBD;
+      border-radius: 8px 8px 0px 0px;
+      height: 50px;
+      display: flex;
+      color: #FFFFFF;
+      
+    }
+    tbody{
+        border-radius: 8px;
+        color: #1A7EBD;
+    }
+    .row-head, .row-body{
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+}
