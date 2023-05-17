@@ -13,18 +13,6 @@
       "id": 1
     },
     {
-      "firstName": " Hassan",
-      "lastName": "Ahmed",
-      "dateOfBirth": "1965-04-01",
-      "gender": "male",
-      "maritalStatus": "single",
-      "qualification": "SSCE",
-      "phone": "08098745612",
-      "email": "zee@gmail.com",
-      "address": " ddccfe",
-      "id": 2
-    },
-    {
       "firstName": "Oladejo",
       "lastName": "Aisha",
       "dateOfBirth": "1995-05-11",
@@ -34,7 +22,31 @@
       "phone": "09025898939",
       "email": "aishatuojuoko@gmail.com",
       "address": "17 majekodunmi, wolejeje street",
+      "id": 2
+    },
+    {
+      "firstName": " Rukayat",
+      "lastName": "Jimoh",
+      "dateOfBirth": "2000-01-22",
+      "gender": "female",
+      "maritalStatus": "single",
+      "qualification": "BSc",
+      "phone": "08135207329",
+      "email": "temitopeoluwa423@gmail.com",
+      "address": "plot 9 freedom estate, magboro, ogun state",
       "id": 3
+    },
+    {
+      "firstName": " Halimat",
+      "lastName": "Adelanwa",
+      "dateOfBirth": "1992-04-10",
+      "gender": "female",
+      "maritalStatus": "married",
+      "qualification": "NCE",
+      "phone": "0810474278",
+      "email": "adelanwahalimat777@gmail.com",
+      "address": " FMC abeokuta, ogun state.",
+      "id": 4
     }
   ]
 }

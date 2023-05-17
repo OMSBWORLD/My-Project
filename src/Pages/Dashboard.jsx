@@ -27,7 +27,8 @@ function Dashboard (){
       }
       const output = users.map((user)=>{
         return(
-         <tr className='row-body' key={user.id}>  
+         <tr className='row-body' key={user.id}> 
+             <td>{user.id}</td> 
              <td>{user.firstName}</td>
              <td>{user.lastName}</td>
              <td>{user.gender}</td>
@@ -39,9 +40,13 @@ function Dashboard (){
       })
     return(
         <div className='home-content'>
+          <div className='total'>
+              Members:{users.length}
+          </div>
            <table>
             <thead className='thead'>
                 <tr  className='row-head'>
+                    <th>S/N</th>
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Gender</th>
@@ -56,6 +61,7 @@ function Dashboard (){
                 </tr>
             </tbody>
            </table>
+           <h1></h1>
         </div>
     )
 }

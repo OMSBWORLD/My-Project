@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../Styles/AddUsers.css"
 import {useNavigate} from 'react-router-dom'
 import axios from 'axios'
+import act from '../assets/act.png'
 
 
 function AddUsers (){
@@ -32,13 +33,13 @@ function AddUsers (){
         setError(false)
         await axios.post("http://localhost:3005/users", user)
         naviagte("/dashboard")
-       }
-       
+       }  
     }
     return(
         <div className='add-users'>
           <div className="user-top">
               <h3>New User</h3>
+              <div className="logo">ACTIVATE 3.<img src={act} width='20kb'/></div>
           </div>
           <div className="user-buttom">
           <form onSubmit={handleSubmit}>

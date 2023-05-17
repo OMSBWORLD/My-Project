@@ -3,6 +3,7 @@ import { useParams, Link} from 'react-router-dom'
 import axios from 'axios'
 import "../Styles/SingleUser.css"
 import {RxDashboard} from 'react-icons/rx';
+import act from '../assets/act.png'
 
 
 function SingleUser (){
@@ -31,8 +32,10 @@ function SingleUser (){
     return(
         <div className='view-grand'>
             <div className='view-left'>
-                <Link to='/dashboard'><RxDashboard/>   Dashboard</Link>
+                <div className='act'><h2>ACTIVATE 3.<img src={act} width='30kb'/> </h2></div>
+                <Link to='/dashboard' className='me'><RxDashboard/>   Dashboard</Link>
             </div>
+            
             <div className='view-right'>
                 <div className='view-top'>
                     <h3>{email}</h3>
@@ -40,6 +43,7 @@ function SingleUser (){
                 <div className='view-buttom'>
                     <div className='buttom-one'>
                         <h3>Welcome! {lastName}</h3>
+                        <div className="logo">ACTIVATE 3.<img src={act} width='20kb'/></div>
                     </div>
                     <div className='buttom-two'>
                        <div className='buttom-two-one'>

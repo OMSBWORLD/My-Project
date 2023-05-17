@@ -3,6 +3,7 @@ import  {useNavigate,  useParams, Link} from 'react-router-dom'
 import axios from 'axios'
 import "../Styles/EditUsers.css"
 import {RxDashboard} from 'react-icons/rx';
+import act from '../assets/act.png'
 
 
 function EditUsers (){
@@ -51,7 +52,8 @@ function EditUsers (){
     return(
         <div className='edit-users'>
                 <div className='edit-left'>
-                    <Link to='/dashboard'><RxDashboard/>   Dashboard</Link>
+                    <div className='act'><h2>ACTIVATE 3.<img src={act} width='30kb'/> </h2></div>
+                    <Link to='/dashboard' className='me'><RxDashboard/>   Dashboard</Link>
                 </div>
             <div className='edit-right'>
                 <div className='edit-top'>
@@ -60,6 +62,7 @@ function EditUsers (){
                 <div className='edit-buttom'>
                     <div className='edit-buttom-one'>
                         <h3>Update</h3>
+                        <div className="logo">ACTIVATE 3.<img src={act} width='20kb'/></div>
                     </div>
                     <div className='edit-buttom-two'>
                         <form className='form' onSubmit={handleSubmit}>

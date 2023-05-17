@@ -7,6 +7,7 @@
 .nav-link{
     width: 100%;
     min-height: 100vh;
+    
 }
 .act{
     width: 100%;
@@ -16,7 +17,7 @@
     align-items: center;
     color: #1a1a1a;
 }
-.menu{
+.menu, .mobile-link{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,32 +25,60 @@
     width: 100%;
     min-height: 30vh; 
 }
-.me:active{
-    background-color: blue;
+.menu-bars{
+    width: 100%;
+    
+}
+.bars, .times{
+   display: none;
+}
+.me{
+    transition: all 0.5s;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.me:hover{
+    background: blue;
+    color: black;
+    transition: all 0.5s;
+}
+.active{
+    background: blue;
+    color: black;
 }
 
 @media screen and (max-width: 500px) {
-    .nav-link{
-        display: flex;
+   .nav-link{
         width: 100%;
-    }
-    .menu{
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 70%;
+   }
+   .menu{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 30vh; 
     }
-    .act{
-        width: 40%;
+    .mobile-link{
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        color: #1a1a1a;
-       
-    }
-    .act h2{
-        font-size: 20px;
-    }
-    
+        width: 100%;
+        }
+   .menu-bars{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .bars, .times{
+    display: flex;
+ }
 }

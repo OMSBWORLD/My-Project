@@ -50,9 +50,6 @@ h2{
         width: 100%;
     }
     .nav{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100%;
         height: 100px;
         background: #FFFFFF;
